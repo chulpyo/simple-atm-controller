@@ -56,8 +56,22 @@ Python 3.8, vscode를 기반으로 코드를 작성하고 테스트하였음.
 ## 실행 방법
 
 ``` bash
+# 저장소 복사
 git clone https://github.com/chulpyo/simple-atm-controller.git
 cd simple-atm-controller
+
+# 가상환경 생성
+mkdir venv
+cd venv
+python -m venv atm_venv
+
+# 가상환경 활성화
+cd ..
+.\venv\atm_venv\Scripts\activate
+
+# 필요 패키지 설치
 python -m pip install -r requirements.txt
+
+# 테스트 실행
 pytest
 ```
